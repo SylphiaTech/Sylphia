@@ -10,6 +10,7 @@
 - **Website**: [SylphiaTools Website](https://www.sylphiatools.com)
 - **GitHub**: [SylphiaTools GitHub Repository](https://github.com/yourusername/sylphiatools)
 - **Twitter**: [@SylphiaTools](https://twitter.com/SylphiaTools)
+- **Gitbook**: [SylphiaTools Gitbook Docs](https://sylphiatech.gitbook.io/sylphiatech-docs/)
 ---
 
 ## 🚀 **What Can Sylphia Do?**
