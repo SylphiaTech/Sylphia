@@ -63,12 +63,12 @@ It is **not financial advice**. Always **do your own research (DYOR)**.
 - [x] Sybil Map Scanner
 - [x] Whale Clustering AI
 - [x] Minimal UI with risk indicators
-- [x] **DexScreener API** integration
 
 ### 🔜 **Phase 2: Near-Term Upgrades**
 
 - [ ] Add chain selector (Solana / BSC [coming soon])
 - [ ] Improved UI with icons and theming
+- [x] DexScreener API integration
 - [ ] Token chart widget (via external API)
 - [ ] Basic settings panel (enable/disable modules)
 
