@@ -7,10 +7,10 @@
 ---
 ## 📎 **Official Links**
 
-- **Website**: [SylphiaTools Website](https://www.sylphiatools.com)
-- **GitHub**: [SylphiaTools GitHub Repository](https://github.com/yourusername/sylphiatools)
-- **Twitter**: [@SylphiaTools](https://twitter.com/SylphiaTools)
-- **Gitbook**: [SylphiaTools Gitbook Docs](https://sylphiatech.gitbook.io/sylphiatech-docs/)
+- **Website**: [SylphiaTech Website](https://www.sylphiatech.com)
+- **GitHub**: [SylphiaTech GitHub Repository](https://github.com/sylphiatech/sylphia)
+- **Twitter**: [@SylphiaTech](https://twitter.com/SylphiaTech)
+- **Gitbook**: [SylphiaTech Gitbook Docs](https://sylphiatech.gitbook.io/sylphiatech-docs)
 ---
 
 ## 🚀 **What Can Sylphia Do?**
@@ -67,16 +67,17 @@ It is **not financial advice**. Always **do your own research (DYOR)**.
 ### 🔜 **Phase 2: Near-Term Upgrades**
 
 - [ ] Add chain selector (Solana / BSC [coming soon])
-- [ ] Improved UI with icons and theming
-- [x] DexScreener API integration
+- [ ] Customizable UI Themes (Improved UI with icons and theming)
 - [ ] Token chart widget (via external API)
-- [ ] Basic settings panel (enable/disable modules)
+- [ ] Smart Alert Settings (enable/disable modules)
 
 ### 📌 **Phase 3: Upcoming Features**
 
 - [ ] Flashloan Exploit Radar
-- [ ] Sentiment Scanner (Twitter/Telegram)
+- [ ] Sentiment Scanner (Twitter)
 - [ ] Sybil Clustering (wallet-level, SolanaFM)
+- [ ] Risk Prediction Engine
+- [ ] Cross-Chain Analytics
 
 ## 🧠 **Formulas and Analysis**
 
