@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sylphia:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: python backend/python/app.py

@@ -1,0 +1,35 @@
+app:
+  name: SylphiaTools
+  version: 1.0
+  environment: production
+api:
+  dexscreener_url: 'https://api.dexscreener.com/latest/dex/tokens/'
+  solana_endpoint: 'https://solana-api.project.com'
+features:
+  bot_detection: true
+  whale_alerts: true
+  sybil_scanning: true
+  flashloan_radar: true
+thresholds:
+  tx_count: 50
+  volume: 100000
+  price_change: 1.5
+  sentiment_negative_limit: 10
+  whale_volume: 1000
+  flashloan_volume: 1000000
+  flashloan_slippage: 10
+param_0: 0
+param_1: 10
+param_2: 20
+param_3: 30
+param_4: 40
+param_5: 50
+param_6: 60
+param_7: 70
+param_8: 80
+param_9: 90
+param_10: 100
+param_11: 110
+param_12: 120
+param_13: 130
+param_14: 140

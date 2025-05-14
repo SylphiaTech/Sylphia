@@ -1,0 +1,13 @@
+{
+  "name": "sylphia-tools",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}

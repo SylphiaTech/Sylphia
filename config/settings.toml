@@ -1,0 +1,11 @@
+[project]
+name = "Sylphia"
+version = "1.0"
+[limits]
+tx_threshold = 500
+volume_threshold = 100000
+price_change_threshold = 1.5
+[flags]
+bot_detection = true
+sybil_scanning = true
+whale_alerts = true

@@ -1,0 +1,12 @@
+{
+  "project": "Sylphia",
+  "version": "1.0",
+  "enabledModules": ["bot", "sybil", "whale", "flashloan"],
+  "maxRequestsPerMinute": 60,
+  "retryLimit": 3,
+  "riskLevels": {
+    "low": 1,
+    "medium": 2,
+    "high": 3
+  }
+}
