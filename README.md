@@ -45,9 +45,7 @@
 
 Whether you’re **aping into memecoins** or tracking **hidden gems** — **Sylphia** helps you act **faster** and **smarter**.
 
----
-
-## **Disclaimer**
+### ⚠️**Disclaimer**
 
 This tool is for **informational purposes only**.
 
