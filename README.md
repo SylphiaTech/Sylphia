@@ -8,6 +8,7 @@
 ## 📎 **Official Links**
 
 - **Website**: [SylphiaTech Website](https://www.sylphiatech.com)
+- **Chrome Extension**: [SylphiaTech Chrome Extension](https://chromewebstore.google.com/detail/sylphia/adclebjemibfodocfffaalnkdhachkfa)
 - **GitHub**: [SylphiaTech GitHub Repository](https://github.com/sylphiatech/sylphia)
 - **Twitter**: [@SylphiaTech](https://twitter.com/SylphiaTech)
 - **Gitbook**: [SylphiaTech Gitbook Docs](https://sylphiatech.gitbook.io/sylphiatech-docs)
