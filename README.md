@@ -20,14 +20,11 @@
 - 🍯 Honeypot & LP Lock Checks  
 - ⚠️ Risk Score System  
 - 🧠 Token Profile Cards  
-- ⚡ Clean, immersive UI  
-- 🔌 All logic runs locally (simulated AI, no API required)
+- ⚡ Clean, immersive UI 
 
 ---
 
 ## 🔧 **Tech Stack**
-
-- **DexScreener API**: Real-time token data integration.
 - **Solana on-chain data**: Blockchain data for Solana tokens.
 - **In-house AI models**: For detecting market anomalies and predicting trends.
 - **Real-time Chrome Extension interface**: Fast, seamless browser extension experience.
