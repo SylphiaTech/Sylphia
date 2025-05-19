@@ -14,19 +14,14 @@
 - **Gitbook**: [SylphiaTech Gitbook Docs](https://sylphiatech.gitbook.io/sylphiatech-docs)
 ---
 
-## 🚀 **What Can Sylphia Do?**
+## 🔍 Live Features (MVP)
 
-- **🔼 Early Pump Detector**  
-  Identifies tokens with sudden spikes in volume and transaction speed.
-
-- **⚠️ Risk Profile**  
-  Scores tokens based on volatility, liquidity strength, and behavior.
-
-- **🤖 Bot Activity Detector**  
-  Detects repetitive or manipulative trading patterns.
-
-- **🐋 Whale Alerts**  
-  Flags large one-shot buys and market-moving events.
+- 🤖 Bot Activity Detection  
+- 🍯 Honeypot & LP Lock Checks  
+- ⚠️ Risk Score System  
+- 🧠 Token Profile Cards  
+- ⚡ Clean, immersive UI  
+- 🔌 All logic runs locally (simulated AI, no API required)
 
 ---
 
@@ -48,50 +43,55 @@ Whether you’re **aping into memecoins** or tracking **hidden gems** — **Sylp
 ### ⚠️**Disclaimer**
 
 This tool is for **informational purposes only**.
-
 It is **not financial advice**. Always **do your own research (DYOR)**.
 
 ---
 
-## 🗺️ **Roadmap – SylphiaTools Extension**
+## 🛣️ Roadmap
 
-### ✅ **Phase 1: MVP (Done)**
+### ✅ Phase 1 — MVP (Live)
+- Pattern-Aware Risk Score  
+- Bot Detection  
+- Honeypot + LP Lock Checks  
+- Token Profile UI  
+- $SYLPH Token Key Unlock  
+- Extension + GitHub + Docs  
+📅 Released Q2 2025
 
-- [x] Manual token input (Solana only)
-- [x] Bot Activity Detector
-- [x] Sybil Map Scanner
-- [x] Whale Clustering AI
-- [x] Minimal UI with risk indicators
+---
 
-### 🔜 **Phase 2: Near-Term Upgrades**
+### 🟣 Phase 2 — In Progress
+- Token Trend Tracking  
+- Smart Alert Toggles  
+- Role-Based Access System  
+- Core Contributor Testing  
+- Custom Risk Filters  
+📅 Expected Q3 2025
 
-- [ ] Add chain selector (Solana / BSC [coming soon])
-- [ ] Customizable UI Themes (Improved UI with icons and theming)
-- [ ] Token chart widget (via external API)
-- [ ] Smart Alert Settings (enable/disable modules)
+---
 
-### 📌 **Phase 3: Upcoming Features**
-
-- [ ] Flashloan Exploit Radar
-- [ ] Sentiment Scanner (Twitter)
-- [ ] Sybil Clustering (wallet-level, SolanaFM)
-- [ ] Risk Prediction Engine
-- [ ] Cross-Chain Analytics
+### 🔮 Phase 3 — Planned
+- Flashloan Radar  
+- Whale Cluster Analysis  
+- Historical Token Playback  
+- AI Risk Forecast Engine  
+- Sybil Pattern Visualizer  
+- Cross-Chain Risk Expansion  
+📅 Q4 2025
 
 ## 🧠 **Formulas and Analysis**
 
-### 1. **🕹️ Bot Activity Detector**
+### 🕹️ Bot Activity Detector  
+**Goal:** Detect potential wash-trading or artificial bot-generated activity
 
-**Goal**: Detect potential wash-trading or artificial bot-generated activity.
+**How it works:**  
+Fetches 24h token stats (simulated):  
+- `txCount` – total trades in 24 hours  
+- `volume` – total volume in USD  
+- `priceChange` – % price movement in 24h
 
-#### **How it works**:
-- Fetches 24h token stats via **DexScreener**:
-    - `txCount` – total trades in 24 hours
-    - `volume` – total volume in USD
-    - `priceChange` – % price movement in 24h
-
-#### **Heuristic Formula**:
-```javascript
+**Heuristic Formula (JavaScript):**
+```js
 function botActivity(txCount, volume, priceChange) {
   const avgTxVolume = volume / txCount;
 
@@ -102,35 +102,41 @@ function botActivity(txCount, volume, priceChange) {
   }
 }
 ```
-Interpretation: Many small, repetitive trades with minimal price change = likely bots or wash volume.
+🍯 Honeypot Status Detector
+Goal: Check whether a token can be sold after purchase
 
-###2. 🕸️ **Sybil Map Scanner**
-**Goal**: Detect abnormal wallet clusters (multi-account or Sybil activity).
-#### **How it works**: Uses txCount as a heuristic baseline.
-Flags risk levels based on unusual transaction frequency to simulate clustering.
+Heuristic Formula (Python):
 
-####  **Heuristic Formula**:
-```javascript
-function sybilRisk(txCount) {
-  if (txCount > 800) return "High Sybil Risk";
-  if (txCount > 300) return "Medium Sybil Risk";
-  return "Low Sybil Risk";
-}
+```py
+def honeypot_status(is_sellable, buy_rate):
+    if not is_sellable:
+        return "Honeypot Detected"
+    elif buy_rate < 40:
+        return "Suspicious"
+    else:
+        return "Sellable"
 ```
-Interpretation: High transaction counts may indicate clustered wallets acting together.
+Interpretation:
+Tokens that block selling or restrict exit options are flagged for user protection
 
-###3. 🐋 **Whale Clustering AI**
-**Goal**: Detect significant activity by high-volume wallets (“whales”).
-#### **How it works**: Analyzes trade count and volume to estimate whale accumulation or volatility.
-
-#### **Heuristic Formula **:
-```javascript
-function whaleActivity(txCount, volume) {
-  const avgTxVolume = volume / txCount;
-
-  if (avgTxVolume > 1000 && txCount < 100) return "Accumulation";
-  if (avgTxVolume > 1500 && txCount >= 100 && tx
+🔒 LP Lock Checker
+Goal: Evaluate how long the token’s liquidity is locked
+Heuristic Formula (Python):
+from datetime import datetime
+```py
+def lp_lock_status(unlock_date):
+    days_locked = (unlock_date - datetime.now()).days
+    if days_locked > 60:
+        return "Locked"
+    elif days_locked > 14:
+        return "Short-Term Lock"
+    else:
+        return "Potential Risk"
 ```
+Interpretation:
+Longer LP lock periods reduce rugpull risks
+Short-term or unlocked LPs are treated as high risk
+
 
 ## 🚀 **Conclusion**
 
